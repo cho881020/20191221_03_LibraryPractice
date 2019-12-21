@@ -24,6 +24,14 @@ class MainActivity : BaseActivity() {
 
     override fun setupEvents() {
 
+        profileImg.setOnClickListener {
+
+            val intent = Intent(mContext, LargeProfileImageActivity::class.java)
+            intent.putExtra("imgUrl", "http://post-phinf.pstatic.net/MjAxODA3MTlfMTIg/MDAxNTMxOTg5ODE5OTAw.edb-H-Rmhr2dFvKAqKA11flZ2k45cRi4Q4IaHirlMF4g.It6ziXN3vtf0R7B2p9DdwOy1hovG7aynuCPwAysStMcg.JPEG/jy180719b2.jpg?type=w1200")
+            startActivity(intent)
+
+        }
+
 
         callBtn.setOnClickListener {
 
